@@ -1,1 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Mobile-first styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and navigation */
+header {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Bio/Hero */
+.bio-hero {
+    flex-basis: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Project cards */
+.card-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    flex-basis: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 30%;
+        margin-bottom: 0;
+    }
+}
